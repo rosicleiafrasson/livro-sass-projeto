@@ -1,0 +1,12 @@
+@mixin ellipsis{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin estiloFonte($cor, $tamanho:12px, $peso:normal, $entrelinhas: 22px){
+	color: $cor;
+	font-size: $tamanho;
+	font-weight: $peso;
+	line-height: $entrelinhas;
+}

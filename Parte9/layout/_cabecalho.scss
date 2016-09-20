@@ -1,0 +1,75 @@
+@mixin itensCabecalho{
+	height: 24px;
+	width: 24px;
+	border-radius:2px;
+}
+
+.cabecalho{
+	height: 45px;
+	background-color: $corBase;
+	border-bottom: 1px solid $corBordaPrincipal;
+	padding: 5px 60px;
+	font-size: $tamanhoFonte;
+	font-family: $familiaFonte;
+	font-weight: 600;
+	
+	.linha{
+		height: 24px;
+		align-items: center;
+		margin-top: 5px;
+	}
+	
+	[class*="painel"]{
+		align-items: center;
+	}
+	.icone{
+		background: $corFundoBoxes;
+		@include itensCabecalho;
+	}
+	
+	.busca{
+		margin-left: 10px;
+		@include itensCabecalho;
+		width: 450px;
+		background: $corFundoBoxes;
+	}
+	
+	.usuario{
+		color: $corFonteDestaque;
+		&:before{
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 5px;
+			@include itensCabecalho;
+			background: #000000;
+		}
+	}
+	
+	.pessoa{
+		background: url(image/pessoas.png);
+		margin-right:10px;
+		@include itensCabecalho;
+	}
+	
+	.mensagem{
+		background: url(image/mensagem.png);
+		@include itensCabecalho;
+		margin-right:10px;
+	}
+	
+	.mundo{
+		background: url(image/mundo-cabecalho.png);
+		@include itensCabecalho;
+	}
+	
+	.pgInicial{
+		color: $corFonteDestaque;
+	}
+	
+	.divisorVertical{
+		height: 20px;
+		border-left: 1px solid #365089;
+	}
+}
+

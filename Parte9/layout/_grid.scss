@@ -1,0 +1,16 @@
+.linha{
+	display: flex;
+}
+
+[class*="painel"]{
+	margin: 5px;
+	display: flex;
+}
+
+$i: 1;
+@while($i <= 12){
+	.painel-#{$i}{
+		flex: $i;
+	}
+	$i: $i + 1;
+}

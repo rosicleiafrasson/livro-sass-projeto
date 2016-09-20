@@ -1,0 +1,24 @@
+
+$corFontePrincipal: #1D2129;
+$corFonteDestaque:#FFFFFF;
+$corDivisor: #CCC;
+$corFundoBoxes: #FFFFFF;
+$botaoPadrao: #F6F7F9;
+$botaoPadraoHover: #E9EBEE;
+$botaoPadraoBorda: #CED0D4;
+$botaoPadraoFonte: #4B4F56;
+
+
+//$corBase: #A41EB7;
+//$corBase: #AA3939;
+$corBase: #3B5998;
+
+$corBordaPrincipal: darken( $corBase, 8%);
+$corHoverPrincipal: lighten(desaturate($corBase, 36), 46%);
+$corFonteSecundaria: darken($corBase, 10%);
+$corFundo: lighten(desaturate($corBase, 30),50%);
+$botaoDestaque: lighten($corBase, 6%);
+$botaoDestaqueHover: darken( $corBase, 10%);
+$botaoDestaqueBorda: lighten($corBase, 7%);
+$botaoDestaqueFonte: #FFFFFF;
+

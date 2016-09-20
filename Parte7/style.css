@@ -1,0 +1,220 @@
+/* 
+   Baseado em
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f1e1f3;
+  font-family: helvetica, arial, sans-serif; }
+
+input[type="file"] {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0; }
+
+.botaoPadrao, .botaoDestaque {
+  border-radius: 2px;
+  height: 24px;
+  margin-right: 10px; }
+
+.botaoPadrao {
+  background: #F6F7F9;
+  border: 1px solid #CED0D4;
+  color: #4B4F56;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+  display: inline-block; }
+  .botaoPadrao:before {
+    content: "";
+    position: absolute;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    margin: 4px; }
+  .botaoPadrao span {
+    margin-left: 24px; }
+  .botaoPadrao:hover {
+    background-color: #E9EBEE; }
+
+.botaoDestaque {
+  background: #bc22d1;
+  border: 1px solid #bf23d6;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px; }
+  .botaoDestaque:hover {
+    background-color: #7d178b; }
+
+.divisorVertical {
+  border-left: 1px solid #CCC;
+  margin: 0 10px; }
+
+.divisorHorizontal {
+  border-bottom: 1px solid #CCC;
+  margin: 5px 10px; }
+
+.iconeMundo:before {
+  background-image: url(image/mundo.png); }
+
+.conteudo {
+  min-height: 600px;
+  display: flex;
+  justify-content: space-between; }
+
+.conteudoPrincipal {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.conteudoPrincipal > div {
+  display: flex;
+  margin: 10px; }
+
+.cabecalho {
+  height: 45px;
+  background-color: #A41EB7;
+  border-bottom: 1px solid #851894; }
+
+.feedNoticias {
+  width: 500px; }
+
+.informacoesConta {
+  width: 180px;
+  margin-right: 10px; }
+
+.infoGerais {
+  font-size: 12px; }
+  .infoGerais ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .infoGerais ul h4 {
+      margin: 15px 0 0;
+      color: #666;
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 22px;
+      text-transform: uppercase; }
+    .infoGerais ul li a {
+      width: 170px;
+      text-decoration: none;
+      display: inline-block;
+      padding: 5px;
+      border-radius: 3px;
+      color: #1D2129;
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 16px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+      .infoGerais ul li a:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        width: 16px;
+        height: 16px;
+        background-image: url(image/defaultIcon.png); }
+      .infoGerais ul li a:hover {
+        background-color: #e8d5eb; }
+
+.outrasInformacoes {
+  width: 310px; }
+
+.sideBar {
+  width: 200px;
+  border-left: 1px solid #CCC; }
+
+[class*="box"] {
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #CCC;
+  margin: 0px 10px 10px 0; }
+
+.boxInicial header {
+  padding: 10px 0 0 10px;
+  display: flex; }
+.boxInicial content {
+  padding: 10px;
+  display: flex; }
+  .boxInicial content .foto {
+    height: 40px;
+    width: 40px;
+    background: #CCC; }
+  .boxInicial content textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    margin-left: 10px;
+    width: 100%;
+    padding-top: 5px;
+    color: #CCC;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 15px;
+    font-family: helvetica, arial, sans-serif; }
+.boxInicial footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0 10px; }
+
+.entradaArquivo {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+  padding: 0 5px;
+  color: #7d178b;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px; }
+  .entradaArquivo:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px; }
+  .entradaArquivo.foto:before {
+    background-image: url(image/photo.png); }
+  .entradaArquivo.album:before {
+    background-image: url(image/folder.png); }
+  .entradaArquivo:hover {
+    background-color: #f6f7f9; }
+
+.boxPublicacao {
+  height: 500px; }
+
+.boxInfo {
+  height: 370px; }
+
+.boxIdiomas {
+  height: 55px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,92 @@
+[class*="box"]{
+	background-color: $corFundoBoxes;
+	border-radius: 3px;
+	border: 1px solid $corDivisor;
+	margin: 0px 10px 10px 0;
+}
+
+.boxInicial{
+	
+	header{
+		padding: 10px 0 0 10px;
+		display: flex;
+	}
+	
+	content{
+		padding: 10px;
+		display: flex;
+		
+		.foto{
+			height: 40px;
+			width: 40px;
+			background: $corDivisor;
+		}
+		
+		textarea{
+			border: none;
+			outline: none;
+			resize: none;
+			margin-left: 10px;
+			width: 100%;
+			padding-top: 5px;
+			@include estiloFonte($cor:$corDivisor, $tamanho:14px, $entrelinhas: 15px);
+			font-family: $familiaFonte;
+		}
+	}
+	
+	footer{
+		display: flex;
+		justify-content: flex-end;
+		padding: 5px 0 10px;
+	}
+}
+.entradaArquivo{
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	border-radius: 2px;
+	padding: 0 5px;
+	@include estiloFonte($corFonteSecundaria, $peso:bold);
+
+	&:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 5px;
+		width: 16px; 
+		height: 16px;
+
+	}
+
+	&.foto{
+		&:before{
+			background-image: url(image/photo.png); 
+		}
+	}
+
+	&.album{
+		&:before{
+			background-image: url(image/folder.png); 
+		}
+	}
+
+	&:hover{
+		background-color: #f6f7f9;
+	}
+
+}
+
+.boxPublicacao{
+	height: 500px;
+	padding: 10px;
+	display:flex;
+	align-items: flex-end;
+}
+
+.boxInfo{
+	height: 370px;
+}
+
+.boxIdiomas{
+	height: 55px;
+}

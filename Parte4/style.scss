@@ -1,0 +1,132 @@
+$corBase: #3B5998;
+$corFontePrincipal: #1D2129;
+$corFonteDestaque:#FFFFFF;
+$corFonteLink: #365899;
+$corFundo: #E9EBEE; 
+$corBorda: #CCC;
+$corFundoBoxes: #FFFFFF;
+$corHoverPrincipal: #DDDFE2;
+$tamanhoFonte: 12px;
+$familiaFonte: helvetica,arial,sans-serif;
+
+@mixin ellipsis{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin estiloFonte($cor, $tamanho:12px, $peso:normal, $entrelinhas: 22px){
+	color: $cor;
+	font-size: $tamanho;
+	font-weight: $peso;
+	line-height: $entrelinhas;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: $corFundo;
+	font-family: $familiaFonte;
+}
+
+.cabecalho{
+	height: 45px;
+	background-color: $corBase;
+	border-bottom: 1px solid #29487D;
+}
+.conteudo{
+	min-height: 600px;
+	display: flex;
+	justify-content: space-between;
+}
+.conteudoPrincipal{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.conteudoPrincipal > div{
+	display: flex;
+	margin: 10px;
+}
+
+.informacoesConta{
+	width: 180px;
+	margin-right: 10px;
+}
+
+.feedNoticias{
+	width: 500px;
+}
+
+.outrasInformacoes{
+	width: 310px;
+}
+
+[class*="box"]{
+	background-color: $corFundoBoxes;
+	border-radius: 3px;
+	border: 1px solid $corBorda;
+	margin: 0px 10px 10px 0;
+}
+
+.boxInicial{
+	height: 150px;
+}
+
+.boxPublicacao{
+	height: 500px;
+}
+
+.boxInfo{
+	height: 370px;
+}
+
+.boxIdiomas{
+	height: 55px;
+}
+
+.sideBar{
+	width: 200px;
+	border-left: 1px solid $corBorda;
+}
+
+.infoGerais{
+	font-size: $tamanhoFonte;
+		ul{
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		h4{
+			margin: 15px 0 0;
+			@include estiloFonte($cor: #666);
+			text-transform: uppercase;
+			
+		}
+		li{
+			a{
+				width: 170px;
+				text-decoration: none;
+				display: inline-block;
+				padding: 5px;
+				border-radius: 3px;
+				@include estiloFonte($cor: $corFontePrincipal, $entrelinhas: 16px);
+				@include ellipsis;
+				&:before {
+					content: "";
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: 5px;
+					width: 16px; 
+					height: 16px;
+					background-image: url(image/defaultIcon.png); 
+				}
+				&:hover{
+					background-color: $corHoverPrincipal;
+				
+				}
+			}
+		}
+	}
+}

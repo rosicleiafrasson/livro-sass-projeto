@@ -1,0 +1,388 @@
+/* 
+   Baseado em
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e6e8ec;
+  font-family: helvetica, arial, sans-serif; }
+
+input[type="file"] {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0; }
+
+.botaoPadrao, .botaoDestaque {
+  border-radius: 2px;
+  height: 24px;
+  margin-right: 10px; }
+
+.botaoPadrao {
+  background: #F6F7F9;
+  border: 1px solid #CED0D4;
+  color: #4B4F56;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+  display: inline-block; }
+  .botaoPadrao:before {
+    content: "";
+    position: absolute;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    margin: 4px; }
+  .botaoPadrao span {
+    margin-left: 24px; }
+  .botaoPadrao:hover {
+    background-color: #E9EBEE; }
+
+.botaoDestaque {
+  background: #4466ae;
+  border: 1px solid #4568b2;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px; }
+  .botaoDestaque:hover {
+    background-color: #2d4373; }
+
+.divisorVertical {
+  border-left: 1px solid #CCC;
+  margin: 0 10px; }
+
+.divisorHorizontal {
+  border-bottom: 1px solid #CCC;
+  margin: 5px 10px; }
+
+.iconeMundo:before {
+  background-image: url(image/mundo.png); }
+
+.acoes .btCurtir {
+  position: relative;
+  color: #7f7f7f;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  margin-right: 20px;
+  padding: 4px 4px 4px 0;
+  cursor: pointer; }
+  .acoes .btCurtir:before {
+    background-image: url(image/curtir.png);
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+    margin: 0 6px -3px 0;
+    width: 14px;
+    height: 14px; }
+
+.reacoes {
+  position: absolute;
+  padding: 5px;
+  margin-top: -70px;
+  box-shadow: 1px 1px 2px #cccccc, -1px 0px 2px #eeeeee;
+  border-radius: 44px 44px;
+  flex-direction: row;
+  display: none;
+  z-index: 1; }
+  .reacoes div {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center; }
+    .reacoes div span {
+      display: block;
+      text-align: center;
+      position: absolute;
+      padding: 3px;
+      background-color: #333333;
+      border-radius: 10px;
+      font-size: 0.8em;
+      color: #FFF;
+      opacity: 0;
+      top: -25px; }
+    .reacoes div:hover {
+      transform: scale(1.3, 1.3) translateY(-5px); }
+      .reacoes div:hover span {
+        opacity: 0.9; }
+
+.curtir:hover .reacoes {
+  display: flex; }
+
+.reacaoCurti {
+  background: url(image/curti.png); }
+.reacaoAmei {
+  background: url(image/amei.png); }
+.reacaoHaha {
+  background: url(image/haha.png); }
+.reacaoUau {
+  background: url(image/uau.png); }
+.reacaoTriste {
+  background: url(image/triste.png); }
+.reacaoGrr {
+  background: url(image/grr.png); }
+
+.linha {
+  display: flex; }
+
+[class*="painel"] {
+  margin: 5px;
+  display: flex; }
+
+.painel-1 {
+  flex: 1; }
+
+.painel-2 {
+  flex: 2; }
+
+.painel-3 {
+  flex: 3; }
+
+.painel-4 {
+  flex: 4; }
+
+.painel-5 {
+  flex: 5; }
+
+.painel-6 {
+  flex: 6; }
+
+.painel-7 {
+  flex: 7; }
+
+.painel-8 {
+  flex: 8; }
+
+.painel-9 {
+  flex: 9; }
+
+.painel-10 {
+  flex: 10; }
+
+.painel-11 {
+  flex: 11; }
+
+.painel-12 {
+  flex: 12; }
+
+.conteudo {
+  min-height: 600px;
+  display: flex;
+  justify-content: space-between; }
+
+.conteudoPrincipal {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.conteudoPrincipal > div {
+  display: flex;
+  margin: 10px; }
+
+.cabecalho {
+  height: 45px;
+  background-color: #3B5998;
+  border-bottom: 1px solid #30487b;
+  padding: 5px 60px;
+  font-size: 12px;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 600; }
+  .cabecalho .linha {
+    height: 24px;
+    align-items: center;
+    margin-top: 5px; }
+  .cabecalho [class*="painel"] {
+    align-items: center; }
+  .cabecalho .icone {
+    background: #FFFFFF;
+    height: 24px;
+    width: 24px;
+    border-radius: 2px; }
+  .cabecalho .busca {
+    margin-left: 10px;
+    height: 24px;
+    width: 24px;
+    border-radius: 2px;
+    width: 450px;
+    background: #FFFFFF; }
+  .cabecalho .usuario {
+    color: #FFFFFF; }
+    .cabecalho .usuario:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+      height: 24px;
+      width: 24px;
+      border-radius: 2px;
+      background: #000000; }
+  .cabecalho .pessoa {
+    background: url(image/pessoas.png);
+    margin-right: 10px;
+    height: 24px;
+    width: 24px;
+    border-radius: 2px; }
+  .cabecalho .mensagem {
+    background: url(image/mensagem.png);
+    height: 24px;
+    width: 24px;
+    border-radius: 2px;
+    margin-right: 10px; }
+  .cabecalho .mundo {
+    background: url(image/mundo-cabecalho.png);
+    height: 24px;
+    width: 24px;
+    border-radius: 2px; }
+  .cabecalho .pgInicial {
+    color: #FFFFFF; }
+  .cabecalho .divisorVertical {
+    height: 20px;
+    border-left: 1px solid #365089; }
+
+.feedNoticias {
+  width: 500px; }
+
+.informacoesConta {
+  width: 180px;
+  margin-right: 10px; }
+
+.infoGerais {
+  font-size: 12px; }
+  .infoGerais ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .infoGerais ul h4 {
+      margin: 15px 0 0;
+      color: #666;
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 22px;
+      text-transform: uppercase; }
+    .infoGerais ul li a {
+      width: 170px;
+      text-decoration: none;
+      display: inline-block;
+      padding: 5px;
+      border-radius: 3px;
+      color: #1D2129;
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 16px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+      .infoGerais ul li a:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        width: 16px;
+        height: 16px;
+        background-image: url(image/defaultIcon.png); }
+      .infoGerais ul li a:hover {
+        background-color: #dcdee1; }
+
+.outrasInformacoes {
+  width: 310px; }
+
+.sideBar {
+  width: 200px;
+  border-left: 1px solid #CCC; }
+
+[class*="box"] {
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #CCC;
+  margin: 0px 10px 10px 0; }
+
+.boxInicial header {
+  padding: 10px 0 0 10px;
+  display: flex; }
+.boxInicial content {
+  padding: 10px;
+  display: flex; }
+  .boxInicial content .foto {
+    height: 40px;
+    width: 40px;
+    background: #CCC; }
+  .boxInicial content textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    margin-left: 10px;
+    width: 100%;
+    padding-top: 5px;
+    color: #CCC;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 15px;
+    font-family: helvetica, arial, sans-serif; }
+.boxInicial footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0 10px; }
+
+.entradaArquivo {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+  padding: 0 5px;
+  color: #2d4373;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px; }
+  .entradaArquivo:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px; }
+  .entradaArquivo.foto:before {
+    background-image: url(image/photo.png); }
+  .entradaArquivo.album:before {
+    background-image: url(image/folder.png); }
+  .entradaArquivo:hover {
+    background-color: #f6f7f9; }
+
+.boxPublicacao {
+  height: 500px;
+  padding: 10px;
+  display: flex;
+  align-items: flex-end; }
+
+.boxInfo {
+  height: 370px; }
+
+.boxIdiomas {
+  height: 55px; }
+
+/*# sourceMappingURL=style.css.map */

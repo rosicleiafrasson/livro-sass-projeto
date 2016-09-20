@@ -1,0 +1,15 @@
+.conteudo{
+	min-height: 600px;
+	display: flex;
+	justify-content: space-between;
+}
+.conteudoPrincipal{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.conteudoPrincipal > div{
+	display: flex;
+	margin: 10px;
+}

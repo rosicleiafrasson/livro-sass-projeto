@@ -1,0 +1,39 @@
+%botao{
+	border-radius: 2px;
+	height: 24px;
+	margin-right: 10px;
+}
+
+.botaoPadrao{
+	@extend %botao;
+	background: $botaoPadrao;
+	border: 1px solid $botaoPadraoBorda;
+	@include estiloFonte($cor:$botaoPadraoFonte, $peso:bold);
+	display: inline-block;
+	&:before{
+		content: "";
+		position: absolute;
+		margin-right: 5px;
+		width: 12px; 
+		height: 12px;
+		margin: 4px;
+	}
+	span{
+		margin-left: 24px;
+	}
+	
+	&:hover{
+		background-color: $botaoPadraoHover;
+	}
+}
+
+.botaoDestaque{
+	@extend %botao;
+	background: $botaoDestaque;
+	border: 1px solid $botaoDestaqueBorda;
+	@include estiloFonte($cor:$botaoDestaqueFonte, $peso:bold);
+	
+	&:hover{
+		background-color: $botaoDestaqueHover;
+	}
+}

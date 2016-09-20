@@ -1,0 +1,16 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: $corFundo;
+	font-family: $familiaFonte;
+}
+
+input[type="file"]{
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0;
+
+}
